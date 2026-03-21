@@ -42,7 +42,7 @@ def describe_first_pdf_page(pdf_path: str, model_name: str = 'llava'):
 
 # --- Execution ---
 if __name__ == "__main__":
-    pdf_file = "project-assets.pdf" 
+    pdf_file = "/home/rodrigo/repos/3d-agent/assets/project-assets.pdf" 
     description = describe_first_pdf_page(pdf_file)
     
     print("--- Model Description ---")
