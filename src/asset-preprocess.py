@@ -17,7 +17,7 @@ def load_pdf(file_path):
 
 def extract_images_from_pdf(file_path):
              #save the first image from the PDF to a file
-    with open(os.path.join("/home/rodrigo/repos/3d-agent", "a.png"), "wb") as fp:
+    with open(os.path.join("/home/rodrigo/repos/3d-agent/tmp", "b.png"), "wb") as fp:
                 fp.write(load_pdf(file_path).pages[0].images[0].data) #
 
 def extract_text_from_pdf(file_path):
@@ -31,5 +31,5 @@ def encode_image(image_path):
 
 
 #ollama_pdf_refview("project-assets.pdf")
-print(encode_image("/home/rodrigo/repos/3d-agent/a.png"))
-
+extract_images_from_pdf("/home/rodrigo/repos/3d-agent/assets/project-assets.pdf")
+print(extract_text_from_pdf("/home/rodrigo/repos/3d-agent/assets/project-assets.pdf"))
